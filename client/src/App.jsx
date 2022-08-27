@@ -80,6 +80,7 @@ const remove=async(id)=>{
   await contract.deleteTodo(id,{from: account });
   console.log("remove")
   setreload(reload=>!reload)
+  console.log(id)
 }
 
 
